@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway  # OBRIGATÓRIO para usar Identity
+  branch: main       # Alerte para o branch do seu repositório
+
+# Configurações de coleções (exemplo básico)
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/blog"
+    create: true
+    fields:
+      - { name: "title", label: "Título" }
+      - { name: "date", label: "Data", widget: "datetime" }
+      - { name: "body", label: "Conteúdo", widget: "markdown" }
