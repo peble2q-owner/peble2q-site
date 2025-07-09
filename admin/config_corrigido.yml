@@ -1,0 +1,20 @@
+
+backend:
+  name: github
+  repo: PedroManuel12-web/peble2q-site
+  branch: main
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "produtos"
+    label: "Produtos"
+    folder: "content/produtos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome do Produto", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Preço (Kz)", name: "price", widget: "number" }
+      - { label: "Imagem", name: "image", widget: "image" }
